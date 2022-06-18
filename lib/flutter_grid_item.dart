@@ -99,10 +99,11 @@ class _GridItemState extends State<GridItem> {
             primary: textStyle?.color,
             backgroundColor: item.color,
             textStyle: textStyle,
-            shape: RoundedRectangleBorder(
-              side: item.shape ?? BorderSide.none,
-              borderRadius: BorderRadius.circular(item.borderRadius),
-            ),
+            shape: item.shape ??
+                RoundedRectangleBorder(
+                  side: BorderSide.none,
+                  borderRadius: BorderRadius.circular(10),
+                ),
           ),
           onPressed: (widget.enabled == true)
               ? () {
@@ -191,11 +192,8 @@ class Grid {
   /// the callback will use the [title] instead.
   final dynamic longPressValue;
 
-  /// The corner radius of the item.
-  final double borderRadius;
-
-  // border settings
-  final BorderSide? shape;
+  /// Border and shape settings
+  final OutlinedBorder? shape;
 
   const Grid({
     this.key,
@@ -205,7 +203,6 @@ class Grid {
     this.value,
     this.longPressValue,
     this.flex = 1,
-    this.borderRadius = 0,
     this.child,
     this.shape,
   });

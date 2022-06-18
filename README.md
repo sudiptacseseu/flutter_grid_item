@@ -1,6 +1,6 @@
 # flutter_grid_item
 
-Flutter widget that arrange items in a grid. It is useful for making a number pad, calculator, and so on.
+A new flutter package to create grid items easily with full customization ability. It'll be helpful for making a number pad, calculator, and so on.
 
 [![pub package](https://img.shields.io/pub/v/flutter_grid_item.svg)](https://pub.dartlang.org/packages/flutter_grid_item)
 

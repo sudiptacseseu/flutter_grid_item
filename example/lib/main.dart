@@ -33,15 +33,18 @@ class MyApp extends StatelessWidget {
               items: [
                 [
                   Grid(
-                      child: const Icon(
-                        Icons.image_outlined,
-                        size: 50,
-                      ),
-                      textStyle: textStyle.copyWith(color: Colors.white),
-                      value: 'image',
-                      color: Colors.blue,
-                      shape: BorderSide(width: 4, color: Colors.blue.shade600),
-                      borderRadius: 10)
+                    child: const Icon(
+                      Icons.image_outlined,
+                      size: 50,
+                    ),
+                    textStyle: textStyle.copyWith(color: Colors.white),
+                    value: 'image',
+                    color: Colors.blue,
+                    shape: RoundedRectangleBorder(
+                      side: BorderSide(width: 4, color: Colors.blue.shade600),
+                      borderRadius: BorderRadius.circular(10),
+                    ),
+                  ),
                 ],
                 [
                   Grid(

@@ -1,6 +1,6 @@
 name: flutter_grid_item
-description: A new flutter package to create grid items easily.
-version: 1.0.0
+description: A new flutter package to create grid items easily with full customization ability. It'll be helpful for making a number pad, calculator, and so on.
+version: 1.0.1
 homepage: https://github.com/sudiptacseseu/flutter_grid_item
 
 environment:
